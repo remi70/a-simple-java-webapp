@@ -47,6 +47,7 @@ public class Registration extends HttpServlet {
 			ps.executeUpdate();
 			PrintWriter out = response.getWriter();
 			out.println("it's ok");
+			conn.close();
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
